@@ -1,0 +1,25 @@
+{
+  "project_info": {
+    "project_number": "461339692011",
+    "firebase_url": "https://sewing-and-clothing.firebaseio.com",
+    "project_id": "sewing-and-clothing",
+    "storage_bucket": "sewing-and-clothing.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:461339692011:android:4abf12879c98af600de7ae",
+        "android_client_info": {
+          "package_name": "com.example.sewingandclothing"
+        }
+      },
+
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcHtUX0t_zitdh6P-Wt3mYe4IaZkr1KCk"
+        }
+      ]
+    }
+  ],
+  "configuration_version": "1"
+}
