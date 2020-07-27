@@ -15,9 +15,4 @@ class ApplicationModule(private val context: Context) {
         return context
     }
 
-//    @Provides
-//    @Singleton
-//    fun provideLoginRegisterRepository(): LoginRegisterRepository{
-//        return LoginRegisterRepository()
-//    }
 }

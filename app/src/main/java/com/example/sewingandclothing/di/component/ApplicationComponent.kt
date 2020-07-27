@@ -8,6 +8,7 @@ import com.example.sewingandclothing.di.module.FragmentModule
 import com.example.sewingandclothing.ui.collection.CollectionFragment
 import com.example.sewingandclothing.ui.collectionDetails.CollectionDetailsFragment
 import com.example.sewingandclothing.ui.login.LoginActivity
+import com.example.sewingandclothing.ui.main.MainActivity
 import com.example.sewingandclothing.ui.order.OrderFragment
 import com.example.sewingandclothing.ui.profile.ProfileFragment
 import com.example.sewingandclothing.ui.register.RegisterActivity
@@ -30,6 +31,7 @@ interface ApplicationComponent: AndroidInjector<SewingAndClothingApplication> {
     fun inject(frag: CollectionDetailsFragment)
     fun inject(act: LoginActivity)
     fun inject(act: RegisterActivity)
+    fun inject(act: MainActivity)
 
     @Component.Builder
     interface Builder{

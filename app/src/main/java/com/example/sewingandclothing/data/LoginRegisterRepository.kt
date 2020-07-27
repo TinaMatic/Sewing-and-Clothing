@@ -1,6 +1,6 @@
 package com.example.sewingandclothing.data
 
-import com.example.sewingandclothing.data.Constants.Companion.USER_DATABASE
+import com.example.sewingandclothing.constants.Constants.Companion.USER_DATABASE
 import com.example.sewingandclothing.model.User
 import com.google.android.gms.tasks.Task
 import com.google.firebase.auth.AuthResult

@@ -1,4 +1,4 @@
-package com.example.sewingandclothing.data
+package com.example.sewingandclothing.constants
 
 class Constants {
 

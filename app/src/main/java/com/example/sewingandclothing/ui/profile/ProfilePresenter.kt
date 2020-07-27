@@ -13,7 +13,6 @@ class ProfilePresenter @Inject constructor(private val loginRegisterRepository: 
 
 
     override fun destroy() {
-        TODO("Not yet implemented")
     }
 
     override fun attach(view: ProfileContract.View) {

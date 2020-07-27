@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.order.OrderFragment">
+
+    <ProgressBar
+        android:id="@+id/progressBarOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvOrderTypeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/order_type_label"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Spinner
+        android:id="@+id/spinnerOrderType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tvOrderTypeLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewDimensions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/spinnerOrderType"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/rlWaistArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvWaistAreaLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/waist_area_dimension"
+                    android:textSize="15sp"
+                    android:textStyle="italic"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentStart="true"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputWaistArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvWaistAreaLabel"
+                    android:layout_alignStart="@id/tvWaistAreaLabel"
+                    android:layout_marginTop="10dp"
+                    app:endIconMode="clear_text"
+                    android:hint="@string/waist_area_hint">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etWaistArea"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlThighsArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rlWaistArea">
+
+                <TextView
+                    android:id="@+id/tvThighsAreaLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/thighs_area_dimension"
+                    android:textSize="15sp"
+                    android:textStyle="italic"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentStart="true"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputThighsArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvThighsAreaLabel"
+                    android:layout_alignStart="@id/tvThighsAreaLabel"
+                    android:layout_marginTop="10dp"
+                    app:endIconMode="clear_text"
+                    android:hint="@string/thighs_area_hint">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etThighsArea"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlThighsLength"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rlThighsArea">
+
+                <TextView
+                    android:id="@+id/tvThighsLengthLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/thighs_length_dimension"
+                    android:textSize="15sp"
+                    android:textStyle="italic"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentStart="true"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputThighsLength"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvThighsLengthLabel"
+                    android:layout_alignStart="@id/tvThighsLengthLabel"
+                    android:layout_marginTop="10dp"
+                    app:endIconMode="clear_text"
+                    android:hint="@string/thighs_length_hint">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etThighsLength"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlSkirtLength"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rlThighsLength">
+
+                <TextView
+                    android:id="@+id/tvSkirtLengthLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/skirt_length_dimension"
+                    android:textSize="15sp"
+                    android:textStyle="italic"
+                    android:layout_marginStart="10dp"
+                    android:layout_alignParentStart="true"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputSkirtLength"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvSkirtLengthLabel"
+                    android:layout_alignStart="@id/tvSkirtLengthLabel"
+                    android:layout_marginTop="10dp"
+                    app:endIconMode="clear_text"
+                    android:hint="@string/skirt_length_hint">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etSkirtLength"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_submit_order"
+        android:textColor="@color/colorAccent"
+        android:background="@drawable/rounded_button"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:elevation="1dp"
+        app:layout_constraintTop_toBottomOf="@id/cardViewDimensions"
+        app:layout_constraintEnd_toEndOf="@id/cardViewDimensions"
+        app:layout_constraintStart_toStartOf="@id/cardViewDimensions"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

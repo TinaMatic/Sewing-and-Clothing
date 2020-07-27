@@ -8,6 +8,8 @@
     <string name="title_order">Order</string>
     <string name="title_status">Status</string>
     <string name="title_collection">Collection</string>
+    <string name="title_collection_details">CollectionDetails</string>
+    <string name="title_order_list">List of Orders</string>
     <string name="title_profile">Profile</string>
     <string name="title_activity_login">Sign in</string>
 
@@ -25,6 +27,18 @@
     <string name="password_not_long_enough">Password has to be at least 6 characters</string>
     <string name="user_does_not_exist">User does not exist</string>
     <string name="user_seamstress">Do you want to register as user or as a seamstress?</string>
+
+    <!--Order Screen-->
+    <string name="order_type_label">Choose the type of clothes you want to order</string>
+    <string name="waist_area_dimension">Enter your waist area in cm:</string>
+    <string name="waist_area_hint">Waist Area cm</string>
+    <string name="thighs_area_dimension">Enter your thighs are in cm:</string>
+    <string name="thighs_area_hint">Thighs Area cm</string>
+    <string name="thighs_length_dimension">Enter the length from waist to thighs in cm:</string>
+    <string name="thighs_length_hint">Thighs Length cm</string>
+    <string name="skirt_length_dimension">Enter the length of the skirt in cm</string>
+    <string name="skirt_length_hint">Skirt Length cm</string>
+    <string name="btn_submit_order">Submit Order</string>
 
     <!--Profile screen-->
     <string name="logout">Logout</string>

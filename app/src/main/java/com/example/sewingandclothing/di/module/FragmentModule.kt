@@ -1,6 +1,7 @@
 package com.example.sewingandclothing.di.module
 
 import com.example.sewingandclothing.data.LoginRegisterRepository
+import com.example.sewingandclothing.data.UserRepository
 import com.example.sewingandclothing.ui.collection.CollectionContract
 import com.example.sewingandclothing.ui.collection.CollectionPresenter
 import com.example.sewingandclothing.ui.collectionDetails.CollectionDetailsContract
@@ -22,8 +23,8 @@ import dagger.Provides
 class FragmentModule {
 
     @Provides
-    fun provideOrderPresenter(): OrderContract.Presenter{
-        return OrderPresenter()
+    fun provideOrderPresenter(userRepository: UserRepository): OrderContract.Presenter{
+        return OrderPresenter(userRepository)
     }
 
     @Provides

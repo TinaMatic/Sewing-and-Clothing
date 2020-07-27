@@ -1,17 +1,16 @@
-package com.example.sewingandclothing.ui.order
+package com.example.sewingandclothing.ui.main
 
 import android.view.View
 import com.example.sewingandclothing.ui.base.BaseContract
 import io.reactivex.Observable
 
-class OrderContract {
+class MainContract {
 
     interface Presenter: BaseContract.BasePresenter<View>{
-        fun isUserOrSeamstress()
+        fun isUserOrSeamstress(): Observable<String>
     }
 
     interface View{
-        fun popFragmentFromStack()
-        fun showProgressBar(show: Boolean)
+
     }
 }
